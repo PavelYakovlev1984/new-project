@@ -2,9 +2,11 @@
   position: relative;
   padding-top: 136px;
   background-image: url("../img/hero-image.png");
+  width: 100%;
+  min-height: 843px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  // background-size: contain;
 
   &__descr {
     color: #2b2b2b;

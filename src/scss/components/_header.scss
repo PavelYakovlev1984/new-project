@@ -9,8 +9,11 @@
     justify-content: space-between;
   }
 
-  &__link {
+  &__link:not(:last-child) {
     margin-right: auto;
+  }
+
+  &__link {
     color: #000;
     font-weight: 700;
     font-size: 16px;
