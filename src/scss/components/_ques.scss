@@ -1,0 +1,35 @@
+.ques {
+  text-align: center;
+  background-color: #F1F2F2;
+  padding-top: 48px;
+  padding-bottom: 68px;
+  border-radius: 80% 80% 0% 0%;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 7px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 52px;
+  }
+
+  // .ques__descr
+
+  &__descr {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 29px;
+  }
+
+  // .ques__button
+
+  &__button {}
+}
+
+.container {}
+
+.btn {}
+
+.btn--red {}

@@ -1,0 +1,27 @@
+.footer {
+  padding: 30px 15px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  background-color: #2F2F2F;
+
+  // .footer__list
+
+  &__list {
+    display: flex;
+  }
+
+  // .footer__link
+  &__item {
+    &:not(:last-child) {
+      margin-right: 44px;
+    }
+  }
+
+  &__link {
+    color: #fff;
+  }
+}
