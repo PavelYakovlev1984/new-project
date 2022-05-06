@@ -1,9 +1,9 @@
 .ques {
   text-align: center;
-  background-color: #F1F2F2;
+  background-color: #f1f2f2;
   padding-top: 48px;
   padding-bottom: 68px;
-  border-radius: 80% 80% 0% 0%;
+  border-radius: 80% 80% 0 0;
 
   &__title {
     margin: 0;
@@ -19,11 +19,9 @@
     margin: 0;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     margin-bottom: 29px;
   }
-
-  // .ques__button
 
   &__button {}
 }
