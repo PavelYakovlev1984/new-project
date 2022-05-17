@@ -54,12 +54,12 @@
     &::after {
       top: 50%;
       transform: rotate(-45deg);
-      transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+      transition: transform 0.3s, top 0.3s;
     }
 
     .burger__line {
       transform: scale(0);
-      transition: transform 0.3s ease-in-out;
+      transition: transform 0.3s;
     }
   }
 }

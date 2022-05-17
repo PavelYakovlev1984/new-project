@@ -22,21 +22,27 @@ html {
 }
 
 img {
-  height: auto;
+  display: block;
   max-width: 100%;
-  object-fit: cover;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
-.site-container {
-  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+button {
+  color: inherit;
+  cursor: pointer;
 }
+
+// .site-container {
+//   overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+// }
 
 .is-hidden {
-  display: none !important; /* stylelint-disable-line declaration-no-important */
+  display: none !important;
+  /* stylelint-disable-line declaration-no-important */
 }
 
 .btn-reset {
@@ -104,4 +110,8 @@ a {
 
 .page--ios .dis-scroll {
   position: relative;
+}
+
+.logo {
+  margin-bottom: 63px;
 }

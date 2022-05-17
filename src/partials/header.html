@@ -1,9 +1,21 @@
 <header class="header">
   <div class="container">
-    <div class="header__body">
-      <button class="header__button btn btn--red">Личный кабинет</button>
-      <button class="header__link">Каталог услуг</button>
-      <button class="header__link header__link--accent">Каталог услуг</button>
-    </div>
+    <nav class="header__body">
+      <button class="header__button btn btn--red" type="button">
+        Личный кабинет
+      </button>
+      <button class="header__link" type="button">Каталог услуг</button>
+      <button class="header__link header__link--accent" type="button">
+        Каталог услуг
+      </button>
+      <button
+        class="burger"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+        data-burger
+      >
+        <span class="burger__line"></span>
+      </button>
+    </nav>
   </div>
 </header>

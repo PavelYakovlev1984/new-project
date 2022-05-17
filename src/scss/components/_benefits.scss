@@ -1,7 +1,6 @@
 .benefits {
-  text-align: center;
   padding-top: 159px;
-  // padding-bottom: 240px;
+  text-align: center;
 
   &__list {
     display: grid;
@@ -14,17 +13,18 @@
   }
 
   &__digit {
+    display: block;
+    margin-bottom: 8px;
     padding-top: 190px;
-    color: #3865A7;
     font-weight: 700;
     font-size: 50px;
-    line-height: 61px;
-    margin-bottom: 8px;
-    background-repeat: no-repeat;
+    line-height: 1.2;
+    color: #3865a7;
     background-position: top center;
+    background-repeat: no-repeat;
 
     &--first {
-      background-image: url(../img/benefits-1.png);
+      background-image: url("../img/benefits-1.png");
     }
 
     &--second {
@@ -32,47 +32,46 @@
     }
 
     &--third {
-      background-image: url(../img/benefits-3.png);
+      background-image: url("../img/benefits-3.png");
     }
   }
 
   &__descr {
+    display: block;
     font-weight: 700;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
     color: #000;
   }
 }
 
 .title {
+  position: relative;
   display: inline-block;
-  position: absolute;
   margin: 0;
+  margin-bottom: 81px;
   font-weight: 700;
   font-size: 40px;
-  line-height: 49px;
+  line-height: 1.2;
   color: #2b2b2b;
-  position: relative;
-  margin-bottom: 81px;
 
   &::before {
-    position: absolute;
     content: "";
-    width: 7px;
-    height: 7px;
+    position: absolute;
     right: -17px;
     top: 50%;
-    position: absolute;
+    width: 7px;
+    height: 7px;
     background-image: url("../img/title-left.svg");
   }
 
   &::after {
-    position: absolute;
     content: "";
-    width: 7px;
-    height: 7px;
+    position: absolute;
     left: -17px;
     top: 50%;
+    width: 7px;
+    height: 7px;
     background-image: url("../img/title-right.svg");
   }
 }
