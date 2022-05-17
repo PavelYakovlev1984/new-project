@@ -9,6 +9,23 @@
   line-height: 24px;
   margin-right: 30px;
   cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.3s,
+    background 0.3s;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    opacity: 0.7;
+    background: -webkit-linear-gradient(45deg, rgb(152, 207, 195) 51%, rgb(86, 181, 184));
+  }
+
+  &:active {
+    opacity: 0.6;
+    background: -webkit-linear-gradient(45deg, rgb(152, 207, 195) 51%, rgb(86, 181, 184));
+  }
 
   &--red {
     background-color: #FE5F5F;
