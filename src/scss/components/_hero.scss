@@ -9,6 +9,10 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+  @include high-tablet {
+    min-height: 300px;
+  }
+
   &__title {
     margin: 0;
     max-width: 576px;
@@ -16,5 +20,9 @@
     font-size: 35px;
     line-height: 1.114;
     color: #2b2b2b;
+
+    @include high-tablet {
+      font-size: 25px;
+    }
   }
 }
