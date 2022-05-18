@@ -1,6 +1,4 @@
 .footer {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
   padding: 30px 15px;
   background-color: #2f2f2f;
 
@@ -12,11 +10,21 @@
 
   &__list {
     display: flex;
-    margin-bottom: 20px;
+    flex-wrap: wrap;
+
+    @include small-tablet {
+      flex-direction: column;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
   }
 
   &__item {
-    grid-column: span 8;
+    @include small-tablet {
+      margin-bottom: 20px;
+    }
 
     &:not(:last-child) {
       margin-right: 44px;
@@ -25,25 +33,6 @@
 
   &__link {
     color: #fff;
-  }
-
-  &__mail {
-    @include tablet {
-      display: block;
-      position: relative;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 10px;
-      padding: 0;
-      margin-right: 0;
-      background-color: #fe5f5f;
-      width: 44px;
-      height: 44px;
-      font-size: 0;
-      background-image: url("../img/mail.png");
-      background-position: center;
-      background-size: 24px 24px;
-      background-repeat: no-repeat;
-    }
   }
 
   &__phone {
@@ -64,10 +53,25 @@
       background-repeat: no-repeat;
     }
 
+    &__phone {
+      @include tablet {
+        display: block;
+        position: relative;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 10px;
+        padding: 0;
+        margin-right: 0;
+        background-color: #fe5f5f;
+        width: 44px;
+        height: 44px;
+        font-size: 0;
+        background-image: url("../img/phone.svg");
+        background-position: center;
+        background-size: 24px 24px;
+        background-repeat: no-repeat;
+      }
+
+    }
+
   }
-
-}
-
-address {
-  grid-column: span 4;
 }
