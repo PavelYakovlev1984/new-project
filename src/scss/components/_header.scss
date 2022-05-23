@@ -66,11 +66,8 @@
 }
 
 .burger {
-  margin-right: auto;
-
-  @include high-desktop {
-    margin-left: auto;
-  }
+  margin-right: 15px;
+}
 }
 
 .nav {
