@@ -37,3 +37,16 @@
     display: block;
   }
 }
+
+.burger-close {
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  background-color: #fe5f5f;
+  width: 44px;
+  height: 44px;
+  background-image: url("../img/phone.svg");
+  background-position: center;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+}
