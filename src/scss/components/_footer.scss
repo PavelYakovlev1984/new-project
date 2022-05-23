@@ -1,4 +1,5 @@
 .footer {
+  outline: 0;
   padding: 30px 15px;
   background-color: #2f2f2f;
 
@@ -9,7 +10,6 @@
   }
 
   &__list {
-    outline: 0;
     display: flex;
     flex-wrap: wrap;
 
@@ -23,7 +23,6 @@
   }
 
   &__item {
-    outline: 0;
 
     &:hover {
       padding: 5px 10px;
@@ -42,7 +41,14 @@
   }
 
   &__link {
+    outline: 0;
     color: #fff;
+
+    &:focus {
+      padding: 5px 10px;
+      border-radius: 5px;
+      background-color: green;
+    }
   }
 
   &__phone {
