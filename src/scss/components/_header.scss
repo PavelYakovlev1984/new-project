@@ -1,6 +1,7 @@
 .header {
   position: absolute;
   z-index: 5;
+  border: none;
   padding: 35px 0;
   width: 100%;
 
@@ -78,6 +79,7 @@
   }
 
   @include high-tablet {
+    display: none;
     position: fixed;
     left: 0;
     top: 0;
@@ -90,6 +92,11 @@
     visibility: hidden;
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   }
+
+  // &__list {
+  //   flex-direction: column;
+  //   align-items: flex-start;
+  // }
 }
 
 .menu--active {
@@ -102,6 +109,21 @@
 }
 
 .burger {
+  display: none;
+
+  @include high-tablet {
+    display: block;
+  }
+
+  &--active {
+    display: none;
+
+    .nav {
+      display: block;
+      flex-direction: column;
+    }
+  }
+
   position: relative;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 10px;
@@ -130,14 +152,6 @@
       width: 13px;
       transform: translate(-50%);
     }
-  }
-}
-
-.burger {
-  display: none;
-
-  @include high-tablet {
-    display: block;
   }
 }
 
